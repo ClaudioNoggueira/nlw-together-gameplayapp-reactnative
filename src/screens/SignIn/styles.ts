@@ -1,14 +1,31 @@
 import { StyleSheet } from "react-native";
+import { theme } from "../../assets/styles/theme";
 
-export const style = StyleSheet.create({
+export const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        backgroundColor: theme.colors.background
     },
-    input: {
-        height: 50,
-        width: 200,
-        borderBottomWidth: 2
+    image: {
+        width: '100%',
+        height: 360,
+    },
+    content: {
+        marginTop: -60,
+        paddingHorizontal: 50
+    },
+    title: {
+        color: theme.colors.heading,
+        textAlign: "center",
+        fontSize: 30,
+        marginBottom: 12,
+    },
+    subtitle: {
+        color: theme.colors.heading,
+        fontSize: 15,
+        textAlign: "center",
+        marginBottom: 64
     }
 });
